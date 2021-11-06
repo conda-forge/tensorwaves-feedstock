@@ -1,19 +1,18 @@
 {% set name = "TensorWaves" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url:
-    https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 3a20139599cf9aba83515cfeb4338d5a0b07158aff27cf434c5aa0ba94a4edcd
+  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
+  sha256: ebceda8be1fc30b58c35cd3f6249f13e6eed3cd1bb416fc860081cde643534d6
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -46,8 +45,7 @@ about:
   license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
-  summary:
-    Python fitter package for multiple computational back-ends
+  summary: Python fitter package for multiple computational back-ends
 
   description: |
     tensorwaves is a Python package for **validating and generating particle reactions**
