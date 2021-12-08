@@ -1,5 +1,5 @@
 {% set name = "TensorWaves" %}
-{% set version = "0.3.4" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: ebceda8be1fc30b58c35cd3f6249f13e6eed3cd1bb416fc860081cde643534d6
+  sha256: da2e691425be8b16b698db7d7fbca2af94eb11ea4e231cda62935bcf6576a417
 
 build:
   noarch: python
@@ -22,9 +22,10 @@ requirements:
   run:
     - python >=3.6,<3.10
     - ampform >=0.10,<0.12
+    - attrs >=20.1.0
     - iminuit >=2.0
     - numpy
-    - phasespace >=1.2.0
+    - phasespace >=1.2.0,<1.5.0
     - PyYAML
     - sympy
     - tensorflow >=2.4,<2.8
