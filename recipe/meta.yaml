@@ -1,5 +1,5 @@
 {% set name = "TensorWaves" %}
-{% set version = "0.3.7" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: da2e691425be8b16b698db7d7fbca2af94eb11ea4e231cda62935bcf6576a417
+  sha256: 099ad06b495e7d6354b7f8a303c419bf97dff94c370135366a4fc4d2e67fb118
 
 build:
   noarch: python
@@ -21,24 +21,22 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6,<3.10
-    - ampform >=0.10,<0.12
     - attrs >=20.1.0
     - iminuit >=2.0
     - numpy
     - phasespace >=1.2.0,<1.5.0
-    - PyYAML
-    - sympy
+    - PyYAML >=5.1
+    - sympy >=1.9
     - tensorflow >=2.4,<2.8
     - tqdm >=4.24.0
-    - typing-extensions
 
 test:
   imports:
     - tensorwaves
     - tensorwaves.data
     - tensorwaves.estimator
+    - tensorwaves.function
     - tensorwaves.interface
-    - tensorwaves.model
     - tensorwaves.optimizer
 
 about:
