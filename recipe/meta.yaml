@@ -37,8 +37,8 @@ test:
     - tensorwaves
     - tensorwaves.data
     - tensorwaves.estimator
+    - tensorwaves.function
     - tensorwaves.interface
-    - tensorwaves.model
     - tensorwaves.optimizer
 
 about:
