@@ -45,17 +45,16 @@ about:
   summary: Python fitter package for multiple computational back-ends
 
   description: |
-    tensorwaves is a Python package for **validating and generating particle reactions**
-    using quantum number conservation rules. The user only has to provide a certain
-    set of boundary conditions (initial and final state, allowed interaction types,
-    expected decay topologies, etc.). tensorwaves will then span the space of allowed
-    quantum numbers over all allowed decay topologies and particle instances that
-    correspond with the sets of allowed quantum numbers it has found.
+    TensorWaves is a fitter package that optimizes mathematical models to data
+    samples. The models can be any _symbolic_ mathematical expression that is then
+    converted to any computational backend. In addition, TensorWaves provides
+    functionality to generate toy Monte Carlo data samples. The package is
+    developed in parallel with [AmpForm](https://github.com/ComPWA/ampform), which
+    implements physics models, but its 'lambdifying' mechanisms can in principle be
+    used independently.
 
-    The resulting state transition objects are particularly useful for **amplitude
-    analysis / Partial Wave Analysis** as they contain all information (such as
-    expected masses, widths, and spin projections) that is needed to formulate an
-    amplitude model.
+    All documentation can be found on
+    [tensorwaves.rtfd.io](https://tensorwaves.readthedocs.io).
 
   dev_url: https://github.com/ComPWA/tensorwaves
   doc_url: https://tensorwaves.readthedocs.io
