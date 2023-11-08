@@ -1,11 +1,11 @@
-About tensorwaves
-=================
+About tensorwaves-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tensorwaves-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ComPWA/tensorwaves
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tensorwaves-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python fitter package for multiple computational back-ends
 
