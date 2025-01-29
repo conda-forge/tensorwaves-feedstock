@@ -40,12 +40,6 @@ test:
     - tensorwaves.optimizer
 
 about:
-  home: https://github.com/ComPWA/tensorwaves
-  license: GPL-3.0-or-later
-  license_family: GPL
-  license_file: LICENSE
-  summary: Python fitter package for multiple computational back-ends
-
   description: |
     TensorWaves is a fitter package that optimizes mathematical models to data
     samples. The models can be any _symbolic_ mathematical expression that is then
@@ -57,9 +51,14 @@ about:
 
     All documentation can be found on
     [tensorwaves.rtfd.io](https://tensorwaves.readthedocs.io).
-
   dev_url: https://github.com/ComPWA/tensorwaves
   doc_url: https://tensorwaves.readthedocs.io
+  home: https://github.com/ComPWA/tensorwaves
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: Python fitter package for multiple computational back-ends
+
 
 extra:
   recipe-maintainers:
