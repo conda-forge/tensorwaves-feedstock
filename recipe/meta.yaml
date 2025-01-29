@@ -1,5 +1,5 @@
 {% set name = "TensorWaves" %}
-{% set version = "0.4.12" %}
+{% set version = "0.4.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name|lower }}-{{ version }}.tar.gz
-  sha256: 8748a6fcfc66cf254c4cad10ead107958481ea68cdf59ccec71c5f34fa6bafa7
+  sha256: 69188837d843247b245db2844c12e06768bb62360aecfa5e85b00bd6f0749a02
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
