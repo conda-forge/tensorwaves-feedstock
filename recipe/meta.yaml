@@ -25,6 +25,7 @@ requirements:
     - iminuit >=2.0
     - numpy
     - PyYAML >=5.1
+    - rich
     - sympy >=1.9
     - tqdm >=4.24.0
 
